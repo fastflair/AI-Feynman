@@ -10,6 +10,20 @@ The 'aifeynman' package is available on PyPI and can be installed with `pip inst
 
 Note that for now, AI Feynman is supported only for Linux and Mac environments.
 
+## Compile
+''''shell
+git clone https://github.com/fastflair/AI-Feynman.git
+# fix the requirements.txt if it is still broken (full details in the notebook I supplied above)
+pip install -r AI-Feynman/requirements.txt
+# Make sure gfortran is installed
+gfortran --version
+sudo apt-get install csh
+# Fix permission issue if it is still a problem in the version you cloned
+chmod +777 AI-Feynman/Code/*
+
+cd AI-Feynman/Code/ && ./compile.sh
+''''
+
 ## First example
 Move into a clean directory and run the following Python commands:
 
