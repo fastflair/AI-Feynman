@@ -13,10 +13,11 @@ Note that for now, AI Feynman is supported only for Linux and Mac environments.
 ## Compile
 ````Shell
 git clone https://github.com/fastflair/AI-Feynman.git
-# fix the requirements.txt if it is still broken (full details in the notebook I supplied above)
 pip install -r AI-Feynman/requirements.txt
 # Make sure gfortran is installed
+sudo apt-get install gfortran
 gfortran --version
+# Requires c shell
 sudo apt-get install csh
 # Fix permission issue if it is still a problem in the version you cloned
 chmod +777 AI-Feynman/Code/*
