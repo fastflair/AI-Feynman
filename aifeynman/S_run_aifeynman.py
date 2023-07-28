@@ -93,7 +93,7 @@ def run_AI_all(pathdir,filename,BF_try_time=60,BF_ops_file_type="14ops", polyfit
     if symmetry_plus_result[0]==-1:
         idx_min = -1
     else:
-        idx_min = np.argmin(np.array([symmetry_plus_result[0], symmetry_minus_result[0], symmetry_multiply_result[0], symmetry_divide_result[0], separability_plus_result[0], separability_multiply_result[0]]))
+        idx_min = np.argmin(np.array([symmetry_plus_result[0].cpu(), symmetry_minus_result[0].cpu(), symmetry_multiply_result[0].cpu(), symmetry_divide_result[0].cpu(), separability_plus_result[0].cpu(), separability_multiply_result[0].cpu()])) 
 
     print("")
     # Check if compositionality is better than the best so far
